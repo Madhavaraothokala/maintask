@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Query</title>
+</head>
+<body>
+   <fieldset>
+        <legend>Customer Details</legend>
+        <form action="./submission.html" method="get" autocomplete="off" target="_blank">
+            <table width="100%">
+                <tr>
+                    <td>
+                         <label for="name">Name:</label>
+                         <input type="text" id="name" name="Name" autofocus required>
+                    </td>
+                </tr>
+                
+                    <tr>
+                        <td>
+                            <lable for="Gender">Gender:</lable>
+                            <input type="radio" id="female" name="Gender" value="female" required>
+                            <label for="female">Female</label>
+                            <input type="radio" id="male" name="Gender" value="male" required>
+                            <label for="male">Male</lable>
+                        </td>
+                    </tr>
+                    <tr>
+                    <tr>
+                        <td>
+                           <label for="Whatsapp No">Whatsapp No:</label>
+                           <input type="text" id="Whatsapp No" name="Whatsapp No"maxlength="10" required>
+                        </td>
+                      </tr>
+                      <tr>  
+                        <td>
+                           <label for="E-mail id">Email-id:</label>
+                           <input type="text" id="E-mail id" name="E-mail id" required> 
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="queries">Your Queries:</lable>
+                        <textarea id="queries" nmae="queries" placeholder="Type here.."></textarea>
+                      </td>
+                    </tr>
+            </table>
+           </fieldset>
+           <br>
+         <center>
+         
+         <br><br>
+         <label for="captcha"><b>CAPTCHA:</b><code>7G5K2</code></label>
+         <br><br>
+          <input type="text" id="captcha" name="captcha" pattern="7G5K2" required placeholder="Enter CAPTCHA code">
+         <input type="submit" value="submit">
+         </center>
+        </form>
+</body>
+</html>
